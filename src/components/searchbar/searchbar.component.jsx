@@ -10,19 +10,6 @@ class Searchbar extends React.Component {
     };
   }
 
-  handleChange = (event) => {
-    event.preventDefault();
-    const { value } = event.target;
-    this.setState(
-      {
-        searchTerm: value,
-      },
-      () => {
-        this.props.context.updateValue(this.state.searchTerm);
-      }
-    );
-  };
-
   render() {
     return (
       <div className="search">
@@ -32,7 +19,6 @@ class Searchbar extends React.Component {
           name="search-text"
           id="search-text"
           placeholder="Search for people or groups"
-          onChange={this.handleChange}
         />
         <button type="submit" />
       </div>
