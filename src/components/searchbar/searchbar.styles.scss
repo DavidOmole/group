@@ -1,0 +1,51 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+.search {
+  display: flex;
+  align-items: center;
+  height: 3vw;
+  width: 26vw;
+  border-radius: 6px;
+  background-color: white;
+
+  input {
+    height: 100%;
+    width: 92%;
+    border: none;
+    padding: 0 1vw;
+    background-color: unset;
+    border-bottom: $grey 1px solid;
+    color: white;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    @include respond(phone) {
+      font-size: 5vw;
+    }
+  }
+
+  button {
+    width: 8%;
+    height: 100%;
+    background-image: url("../../assets/search.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: unset;
+    background-size: 80%;
+    border: none;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    cursor: pointer;
+    @include respond(phone) {
+      width: 10%;
+    }
+  }
+
+  @include respond(tab-port) {
+    height: 4.6vw;
+    width: 55vw;
+  }
+  @include respond(phone) {
+    width: 85vw;
+    height: 8vw;
+  }
+}

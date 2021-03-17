@@ -1,0 +1,24 @@
+@import "../scss/variables.scss";
+
+.home {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2vw;
+  justify-content: center;
+
+  .groups__container {
+    display: flex;
+    flex-direction: column;
+    .title {
+      text-align: center;
+      width: 12vw;
+      height: 4vw;
+      background-color: $primary;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2vw auto;
+    }
+  }
+}
